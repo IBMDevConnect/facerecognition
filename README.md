@@ -4,7 +4,20 @@
 
 This Project uses OpenCV's [OpenFace](https://cmusatyalab.github.io/openface/), a pytorch implementation of [FaceNet](https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/1A_089.pdf) to train a simple SVM that performs deep facial recognition with minimal number (4-5) of images per class
 
-1) Clone the Github repo
+### Pre-requisite:
+
+1) Python
+    
+    For Windows- https://www.python.org/downloads/windows/
+    For MAC- https://www.python.org/downloads/
+
+2) Anaconda Installation- https://www.anaconda.com/distribution/
+
+Follow steps mentioned in the blog to setup the environment- https://www.pugetsystems.com/labs/hpc/The-Best-Way-to-Install-TensorFlow-with-GPU-Support-on-Windows-10-Without-Installing-CUDA-1187/
+
+### Steps:
+
+1) Clone/Download the Github repo- https://github.com/krishnac7/Deep_facial_recognition
 
     `git clone https://github.com/krishnac7/Deep_facial_recognition.git`
 
@@ -46,24 +59,28 @@ Optionally you can pass in the argument --unauth <CLASS_NAME> to sound alarm whe
 
 ## Build a Face Recognition app using Watson Visual Recognition service
 
-1. From IBM Cloud catalog, create a Watson Studio service.
+### Pre-requisite: 
 
-2. Open the Watson Studio service.
+1. IBM Cloud Account- https://cloud.ibm.com
 
-3. From the Projects page in Watson Studio, add a new project.
+### Steps:
+
+1. Sign in to IBM Cloud and from IBM Cloud catalog, create Watson Studio service.
+
+2. Open the Watson Studio service by clicking on Get Started.
+
+3. From the Projects page in Watson Studio, create a new project.
 
 4. When prompted, select the `Visual Recognition project` type.
 
 5. If you have no instances of the Visual Recognition service, a new instance will be created. 
    If you have existing instances, you have a choice:
         Click the Existing option to associate an existing instance with the project
-        
         OR
-        
         Click the New option to create another new instance
 
 
-6. Click your and your colleagues 10 face photos
+6. Prepare images by clicking your's and your colleagues 10 face photos
 
 7. Organize 10 images in two .zip files (For eg yours.zip && your_colleagues.zip)
 
@@ -78,6 +95,8 @@ Optionally you can pass in the argument --unauth <CLASS_NAME> to sound alarm whe
 12. Click Train Model.
 
 Wait for the training process to finish. You can leave the Visual Recognition model builder while the process runs. You can monitor the status of the training process by looking at the status of the model on the Assets page of your project.
+
+13. Test the model after training has been completed.
 
 ## Additional Link
 
